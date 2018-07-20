@@ -2,7 +2,7 @@ package com.firminapp.myokhttprequestmaker.smart_transformers;
 
 import android.util.Log;
 
-import com.hesystems_group.second_app.android.owomy.extramodules.httprequestmanaager.PostDataModel.PostListe;
+import com.firminapp.myokhttprequestmaker.PostDataModel.PostListe;
 
 import org.json.JSONObject;
 
