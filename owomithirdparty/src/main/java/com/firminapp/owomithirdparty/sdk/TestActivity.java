@@ -2,6 +2,7 @@ package com.firminapp.owomithirdparty.sdk;
 
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 
@@ -13,6 +14,7 @@ import org.json.JSONObject;
 
 public class TestActivity extends AppCompatActivity {
     JSONObject data;
+    private String TAG=TestActivity.class.getSimpleName();
     private TextView tv;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -30,16 +32,19 @@ public class TestActivity extends AppCompatActivity {
                         @Override
                         public void onProcced() {
                             tv.setText("processing...");
+                            Log.e(TAG,"processing");
                         }
 
                         @Override
                         public JSONObject onFinish(JSONObject data) {
                             tv.setText("finish...");
+                            Log.e(TAG,data.toString());
                             return null;
                         }
 
                         @Override
                         public String onError(String error) {
+                            Log.e(TAG,error);
                             tv.setText("error...");
                             return null;
                         }

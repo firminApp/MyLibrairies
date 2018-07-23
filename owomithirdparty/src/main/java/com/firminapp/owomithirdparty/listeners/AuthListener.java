@@ -11,7 +11,4 @@ public interface AuthListener {
     void onProcced();
     JSONObject onFinish(JSONObject data);
     String onError(String error);
-
-
-
 }

@@ -6,6 +6,6 @@ import org.json.JSONObject;
  * Created by firmin on 19/07/18.
  */
 
-public interface OperationListener {
-    void onSubmitOperation(JSONObject submitResult);
+public interface OperationListener  {
+
 }

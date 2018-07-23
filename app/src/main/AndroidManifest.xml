@@ -17,14 +17,6 @@
             </intent-filter>
         </activity>
 
-        <receiver
-            android:name=".SdkOperationRecever"
-            android:enabled="true"
-            android:exported="true">
-            <intent-filter>
-                <action android:name="com.hesystems.owomi.modules.OPERATION_STARTER" />
-            </intent-filter>
-        </receiver>
     </application>
 
 </manifest>
