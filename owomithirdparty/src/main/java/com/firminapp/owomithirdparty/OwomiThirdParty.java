@@ -79,7 +79,7 @@ public class OwomiThirdParty {
         Log.e(TAG,"finish waiting for the operation...");
 
         //todo the real response will come from the broadcast
-        BroadcastReceiver receiver=new OperationResponseRecever(){
+        new OperationResponseRecever(){
             @Override
             public void onReceive(Context context, Intent intent) {
                 super.onReceive(context, intent);
